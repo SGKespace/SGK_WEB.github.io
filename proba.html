@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <title>SGKWEB</title>
     <script src="https://telegram.org/js/telegram-web-app.js?2"></script>
+    <script>
+        function setThemeClass() {
+            document.documentElement.className = Telegram.WebApp.colorScheme;
+        }
+        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+        setThemeClass();
+    </script>
+    
 </head>
     <ul>
 
@@ -14,7 +22,7 @@
 
 <body>
     
-    <form>
+  <form>
    <p><strong>Введите ваш город</strong></p>
    <p><input name="city" list="city"></p>
   </form> 
@@ -35,6 +43,21 @@
    <option>Уфа</option>
    <option>Челябинск</option>
   </datalist>
+
+  <script type="application/javascript">
+      Telegram.WebApp.onEvent('themeChanged', function () {
+        document.getElementById('theme_data').innerHTML = JSON.stringify(Telegram.WebApp.themeParams, null, 2);
+    });
+      document.getElementById('city').addEventListener('input', function (e) {
+        const val = this.value.toLowerCase();
+        if (val.indexOf('progress') >= 0) {
+            Telegram.WebApp.MainButton.showProgress();
+        } else {
+            Telegram.WebApp.MainButton.hideProgress();
+        }
+    });
+  </script>    
+
     
 </body>
 </html>
