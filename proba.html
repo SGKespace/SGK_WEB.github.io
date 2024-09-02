@@ -15,7 +15,6 @@
         function setThemeClass() {
             document.documentElement.className = Telegram.WebApp.colorScheme;
         }
-
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
     </script>
@@ -28,16 +27,14 @@
 
 <section id="top_sect" class="second">
 
-    <ul>
-        <li><a id="regular_link" href="index.html">На глаавную</a> (opens inside webview)</li>
-    </ul>
-
-    
-  <div class="formulir"><b>LOKASI DAN VERIFIKASI</b></div>
+  <ul>
+    <li><a id="regular_link" href="index.html">На глаавную</a> (opens inside webview)</li>
+  </ul>
+  <br />
+  <div class="formulir"> <b>Связанные поля</b> </div>
     <div>
-        <div class="tele-atr1"><b>Latitude</b></div>
+        <div class="tele-atr1"> <b>Город</b> </div>
         <input type="text" placeholder="Latitude..." id="latitude" list="city" />
-        
         <datalist id="city">
            <option>Волгоград</option>
            <option>Воронеж</option>
@@ -54,15 +51,11 @@
            <option>Санкт-Петербург</option>
            <option>Уфа</option>
            <option>Челябинск</option>
-      </datalist>
-
-
-
-        
+        </datalist>    
     </div>
     
     <div>
-        <div class="tele-atr1"><b>Longitude</b></div>
+        <div class="tele-atr1"> <b>Longitude</b> </div>
         <input type="text" placeholder="Longitude..." id="longitude"/>
     </div>   
         
