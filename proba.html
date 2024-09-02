@@ -10,7 +10,7 @@
     <meta name="HandheldFriendly" content="True"/>
     <meta name="robots" content="noindex,nofollow"/>
     <title>SGKWEB</title>
-    <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js?2"></script>
     <script>
         function setThemeClass() {
             document.documentElement.className = Telegram.WebApp.colorScheme;
@@ -355,23 +355,43 @@
     </style>
 </head>
 
-
-    
-    <ul>
-
-        <li><a id="regular_link" href="index.html">На глаавную</a> (opens inside webview)</li>
-
-    </ul>
-
 <body  class="" style="visibility: hidden;">
 
 <section id="top_sect" class="second">
+
+    <ul>
+        <li><a id="regular_link" href="index.html">На глаавную</a> (opens inside webview)</li>
+    </ul>
+
+    
   <div class="formulir"><b>LOKASI DAN VERIFIKASI</b></div>
     <div>
         <div class="tele-atr1"><b>Latitude</b></div>
-        <input type="text" placeholder="Latitude..." id="latitude"/>
+        <input type="text" placeholder="Latitude..." id="latitude" list="city" />
+        
+        <datalist id="city">
+           <option>Волгоград</option>
+           <option>Воронеж</option>
+           <option>Екатеринбург</option>
+           <option>Казань</option>
+           <option>Красноярск</option>
+           <option>Москва</option>
+           <option>Нижний Новгород</option>
+           <option>Новосибирск</option>
+           <option>Омск</option>
+           <option>Пермь</option>
+           <option>Ростов-на-Дону</option>
+           <option>Самара</option>
+           <option>Санкт-Петербург</option>
+           <option>Уфа</option>
+           <option>Челябинск</option>
+      </datalist>
+
+
+
+        
     </div>
-    <div>
+    
     <div>
         <div class="tele-atr1"><b>Longitude</b></div>
         <input type="text" placeholder="Longitude..." id="longitude"/>
