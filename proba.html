@@ -61,7 +61,7 @@
         
 <button id="data_btn" onclick="DemoApp.requestLocation(this);">Get Location</button>
 
-<label for="vehicle1">Pairing dan Verifikasi No HP</label>
+<label for="vehicle1">Отправить данные боту</label>
     
 
 <button id="data_btn" onclick="DemoApp.requestContact();">Send</button>
@@ -74,6 +74,9 @@
      * This is a demo code for Telegram WebApp for Bots
      * It contains basic examples of how to use the API
      * Note: all requests to backend are disabled in this demo, you should use your own backend
+     * Это демо-код Telegram WebApp для ботов.
+     * Содержит базовые примеры использования API.
+     * Примечание. В этой демонстрации отключены все запросы к бэкэнду, вам следует использовать собственный бэкэнд.
      */
 
     const DemoApp = {
@@ -178,8 +181,8 @@
                     document.querySelector('#longitude').value = position.coords.longitude;
                 });
             } else {
-                el.nextElementSibling.innerHTML = 'Geolocation is not supported in this browser.';
-                el.nextElementSibling.className = 'err';
+                 el.nextElementSibling.innerHTML = 'Geolocation is not supported in this browser.';
+                 el.nextElementSibling.className = 'err';
             }
             return false;
         },        
