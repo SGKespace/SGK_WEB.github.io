@@ -10,13 +10,58 @@
 
     <title>Carpets for every taste</title>
     <link rel='icon' href='../static/favicon.png' type='image/png'>
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+
+
   </head>
   <body>
+
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo-wrapper">
+
+                <img class="header__logo" width="60" src="../static/kover.jpg" alt="Ковры для вас">
+
+                <div class="header__logo-text">
+                    <p class="header__logo-title">Ковры от Егора</p>
+                    <p class="header__logo-description">Ваш неповторимый дизаайн</p>
+                </div>
+
+            </div>
+            <div class="header__contents">
+                <div class="header__contacts">
+                    <div class="header__tel">
+                        <p><a href="tel:+380951267333">+38(095) 126-73-33</a></p>
+                        <span>Мобильный</span>
+                    </div>
+                    <div class="header__tel">
+                        <p><a href="tel:+380951267232">+38(095) 126-72-32</a></p>
+                        <span>Многоканальный</span>
+                    </div>
+
+                </div>
+                <button class="header__callback-button">ЧТО ТО СЮДА</button>
+                <button class="header__nav-button"><img width="20" src="../static/menu.svg" alt="Кнопка меню"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+    <article class="article">
+
+
+
     <div class='container'>
       <nav aria-label='Page navigation example'>
-        <h3 class='card-title'> Ковры на любой вкус  -  это заголовок </h3>
 
-        <br />
+
+
+        <!-- <div class='fixed-top'>
+          <h3 class='card-title'> Ковры на любой вкус  -  это заголовок </h3>
+        </div>
+
+        <br /> -->
 
         <ul class='pagination mt-3 justify-content-center'>
 
@@ -56,7 +101,7 @@
                     <h5 class='card-text'> Классические </h5>
                     <h5>
                       
-                        <span class='badge badge-light'>Цена 213 000 ₽</span>
+                        <span class='badge badge-light'>Цена 213 000 ₽ без скидки</span>
                       
                         <span class='badge badge-light'>скидка возможна</span>
                       
@@ -82,9 +127,11 @@
                     <h5 class='card-text'> Классические </h5>
                     <h5>
                       
-                        <span class='badge badge-light'>Цена 213 000 ₽</span>
+                        <span class='badge badge-light'>Классическая проза</span>
                       
-                        <span class='badge badge-light'>скидка возможна</span>
+                        <span class='badge badge-light'>Научная фантастика</span>
+                      
+                        <span class='badge badge-light'>Социально-философская фантастика</span>
                       
                     </h5>
                     <!-- <a href='../media/books/60835.%D0%9F%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%B7%D0%B5%D0%BC%D0%BB%D0%B5%D0%B4%D0%B5%D0%BB%D1%8C%D1%86%D1%8B.txt' target='_blank' class='h4' rel='noopener noreferrer'>Читать</a> -->
@@ -143,6 +190,14 @@
           </div>
         
       </div>
+      </article>
+      </main>
+
+      <footer class="footer">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="../static/scripts.js"></script>
+
+
        <br />
 
       <h3 class='card-title'> Ковры на любой вкус  -  это подвал </h3>
@@ -159,11 +214,15 @@
       <a href="https://wa.me/4957777777?text=Привет!">Чат+сообщение WhatsApp</a> <br />
       <a href="vk.me/agvento">Написать в VK</a> <br />
       <a href="https://www.messenger.com/t/jack.malbon.3">Facebook Messenger</a> <br /> <br /> <br />
-    </div>
+
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src='../static/jquery-3.5.1.slim.min.js'></script>
     <script src='../static/bootstrap.bundle.min.js'></script>
+
+
+
+      </footer>
 
   </body>
 </html>
